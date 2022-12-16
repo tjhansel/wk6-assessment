@@ -16,7 +16,7 @@ rollbar.log('QA Assessment Log')
 app.use(express.static(`./public`))
 
 app.get('/', (req,res) => {
-  res.status(200).sendFile(path.join(__dirname,'../public/index.html'))
+  res.status(200).sendFile(path.join(__dirname,'./public/index.html'))
 })
 
 app.use(express.json())
